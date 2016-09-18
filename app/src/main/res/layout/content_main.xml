@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/header"
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView android:text="@string/StreetLabel"
+        android:id="@+id/StreetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        />
+
+    <TextView android:text="@string/CityLabel"
+        android:id="@+id/CityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StreetLabel"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+
+    <TextView android:text="@string/StateLabel"
+        android:id="@+id/StateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CityLabel"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+
+    <TextView android:text="@string/DegreeLabel"
+        android:id="@+id/DegreeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StateLabel"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/StreetVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="textCapWords|text|textCapCharacters"
+        android:width="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="37dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/header"
+        android:layout_alignRight="@id/StreetLabel"/>
+
+    <EditText
+        android:id="@+id/CityVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="textCapWords|text|textCapCharacters"
+        android:width="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/StateLabel"
+        android:textSize="15dp"
+        android:layout_below="@+id/StreetVal" />
+
+    <Spinner
+        android:id="@+id/StateVal"
+        android:entries="@array/country_arrays"
+        android:prompt="@string/country_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:width="@dimen/activity_horizontal_margin"
+        android:layout_above="@+id/DegreeLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="25dp"
+        android:layout_below="@+id/CityVal" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioDegree"
+        android:orientation="horizontal"
+        android:layout_below="@id/StateVal"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/DegreeLabel"
+        android:layout_marginLeft="20dp"
+        android:weightSum="1">
+
+        <RadioButton
+            android:id="@+id/radioFahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fahrenheitLabel"
+            android:checked="true"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/radioCelsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CelsiusLabel"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SearchBtn"
+        android:textSize="20dp"
+        android:layout_below="@+id/DegreeLabel"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ClearBtn"
+        android:textSize="20dp"
+        android:layout_marginLeft="130sp"
+        android:layout_marginTop="9sp"
+        android:layout_below="@+id/radioDegree"
+        android:onClick="ClearBtnClicked"/>
+
+
+
+    <Button
+        android:id="@+id/AboutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:onClick="AboutClicked"
+        android:layout_below="@+id/searchBtn"
+        android:layout_alignRight="@+id/searchBtn"
+        android:layout_alignEnd="@+id/searchBtn"
+        android:layout_marginTop="50dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/forecast_logo"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/clearBtn"
+        android:layout_toRightOf="@+id/clearBtn"
+        android:layout_alignTop="@+id/AboutBtn" />
+
+
+</RelativeLayout>

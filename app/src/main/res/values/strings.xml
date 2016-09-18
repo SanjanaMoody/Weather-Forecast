@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+    <string name="header">Forecast Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="StreetLabel">Street</string>
+    <string name="CityLabel">City</string>
+    <string name="StateLabel">State</string>
+
+    <string name="country_prompt">Select a country</string>
+    <string-array name="country_arrays">
+
+        <item>Select State</item>
+        <item value="AL">Alabama</item>
+        <item value="AK">Alaska</item>
+        <item value="AZ">Arizona</item>
+        <item value="AR">Arkansas</item>
+        <item value="CA">California</item>
+        <item value="CO">Colorado</item>
+        <item value="CT">Connecticut</item>
+        <item value="DE">Delaware</item>
+        <item value="DC">District Of Columbia</item>
+        <item value="FL">Florida</item>
+        <item value="GA">Georgia</item>
+        <item value="HI">Hawaii</item>
+        <item value="ID">Idaho</item>
+        <item value="IL">Illinois</item>
+        <item value="IN">Indiana</item>
+        <item value="IA">Iowa</item>
+        <item value="KS">Kansas</item>
+        <item value="KY">Kentucky</item>
+        <item value="LA">Louisiana</item>
+        <item value="ME">Maine</item>
+        <item value="MD">Maryland</item>
+        <item value="MA">Massachusetts</item>
+        <item value="MI">Michigan</item>
+        <item value="ME">Maine</item>
+        <item value="MS">Mississippi</item>
+        <item value="MO">Missouri</item>
+        <item value="MT">Montana</item>
+        <item value="NE">Nebraska</item>
+        <item value="NV">Nevada</item>
+        <item value="NH">New Hampshire</item>
+        <item value="NJ">New Jersey</item>
+        <item value="NM">New Mexico</item>
+        <item value="NY">New York</item>
+        <item value="NC">North Carolina</item>
+        <item value="ND">NorthDakota</item>
+        <item value="OH">Ohio</item>
+        <item value="OK">Oklahoma</item>
+        <item value="OR">Oregon</item>
+        <item value="PA">Pennsylvania</item>
+        <item value="RI">Rhode Island</item>
+        <item value="SC">South Carolina</item>
+        <item value="SD">South Dakota</item>
+        <item value="TN">Tennessee</item>
+        <item value="TX">Texas</item>
+        <item value="UT">Utah</item>
+        <item value="VT">Vermont</item>
+        <item value="VA">Virginia</item>
+        <item value="WA">Washington</item>
+        <item value="WV">West Virginia</item>
+        <item value="WT">Wisconsin</item>
+        <item value="WY">Wyoming</item>
+    </string-array>
+
+
+    <string name="DegreeLabel">Degree</string>
+    <string name="fahrenheitLabel">fahrenheit</string>
+    <string name="CityHint">Enter City</string>
+    <string name="CelsiusLabel">Celsius</string>
+
+    <string name="SearchBtn">Search</string>
+    <string name="ClearBtn">Clear</string>
+    <string name="PoweredBy">Powered By:</string>
+    <string name="MoreDetails">More Details</string>
+    <string name="ChanceOfRain">ChanceOfRain</string>
+    <string name="Precip">Precip</string>
+    <string name="WindSpeed">WindSpeed</string>
+    <string name="Humidity">Humidity</string>
+    <string name="Visibility">Visibility</string>
+    <string name="Sunrise">Sunrise</string>
+    <string name="Sunset">Sunset</string>
+    <string name="DewPoint">DewPoint</string>
+    <string name="ViewMap">View Map</string>
+    <string name="Fragment">Fragment</string>
+    <string name="aeris_client_id">ahKHSTILSIBzHHoYFRq8l</string>
+    <string name="aeris_client_secret">Bo8CDmWmoJLkpaJgMdppLKTiqpdbS6JmiAxWzG0Y</string>
+    <string name="facebook_app_id">623436904463657</string>
+
+</resources>
